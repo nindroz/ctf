@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <script>
+        function answer1() {
+                const name = document.querySelector('#answer0').value;
+                if(name==="ctf{yousoveeddit)"){
+                    document.querySelector('#text0').innerHTML="solved"
+                    
+                }
+                document.querySelector("#answer0").value=' ';
+        }
+
+        function answer2() {
+                const name = document.querySelector('#answer1').value;
+                if(name==="ctf{oofnumbertwo)"){
+                    document.querySelector('#text1').innerHTML="solved"
+                    
+                }
+                document.querySelector("#answer1").value=' ';
+        }
+
+        function answer3() {
+                const name = document.querySelector('#answer2').value;
+                if(name==="ctf{lookeehere_its _trump}"){
+                    document.querySelector('#text2').innerHTML="solved"
+                    
+                }
+                document.querySelector("#answer2").value=' ';
+        }
+
+        function answer4() {
+                const name = document.querySelector('#answer3').value;
+                if(name==="ctf{oohufoundmytwitter}"){
+                    document.querySelector('#text3').innerHTML="solved"
+                    
+                }
+                document.querySelector("#answer3").value=' ';
+        }
+
+        function answer5() {
+                const name = document.querySelector('#answer4').value;
+                if(name==="ctf{ugreppedit!!}"){
+                    document.querySelector('#text4').innerHTML="solved"
+                    
+                }
+                document.querySelector("#answer4").value=' ';
+        }
+
+        function answer6() {
+                const name = document.querySelector('#answer5').value;
+                if(name==="ctf{love_food_chiphers}"){
+                    document.querySelector('#text5').innerHTML="solved"
+                    
+                }
+                document.querySelector("#answer5").value=' ';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Find flags, all flags are encased in ctf{}</h1>
+    <h2 id="text0">Decode: Y3Rme3lvdXNvdmVlZGRpdCk= </h2>
+    <form id="form" onsubmit="return false">
+        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer0">
+        <button type="submit" onclick="answer1()" value="Submit">Submit</button>
+    </form>
+
+    <h2 id="text1">Decode: pgs{bbsahzoregjb) </h2>
+    <form id="form" onsubmit="return false">
+        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer1">
+        <button type="submit" onclick="answer2()" value="Submit">Submit</button>
+    </form>
+
+    <h2 id="text2">Find the flag</h2>
+    <img src="trump (1).jpeg" alt="trump" width=100px>
+    <form id="form" onsubmit="return false">
+        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer2">
+        <button type="submit" onclick="answer3()" value="Submit">Submit</button>
+    </form>
+
+    <h2 id="text3">Find my twitter</h2>
+    <form id="form" onsubmit="return false">
+        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer3">
+        <button type="submit" onclick="answer4()" value="Submit">Submit</button>
+    </form>
+
+    <h2 id="text4">Grep it</h2>
+    <form id="form" onsubmit="return false">
+        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer4">
+        <button type="submit" onclick="answer5()" value="Submit">Submit</button>
+    </form>
+
+    <h2 id="text5">love BACON on berkfast Decode: AAABABAABAAABABABABAABBABBAABBAABAAAABABABBABABBABAAABBAAABAAABBBABAAAABBBAAABBBAABAABAAAABAAAB
+    </h2>
+    <form id="form" onsubmit="return false">
+        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer5">
+        <button type="submit" onclick="answer6()" value="Submit">Submit</button>
+    </form>
+    
+
+</body>
+</html>
