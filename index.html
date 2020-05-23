@@ -4,58 +4,89 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
     <title>Document</title>
     <script>
-        function answer1() {
-                const name = document.querySelector('#answer0').value;
-                if(name==="ctf{yousoveeddit)"){
+
+            // Convert to 32bit integer 
+            function stringToHash(number) { 
+                  const string = document.querySelector(`#answer${number}`).value;
+                  console.log(string);
+                  var hash = 0; 
+                    
+                  if (string.length == 0) return hash; 
+                    
+                  for (i = 0; i < string.length; i++) { 
+                      char = string.charCodeAt(i); 
+                      hash = ((hash << 5) - hash) + char; 
+                      hash = hash & hash; 
+                  } 
+                  console.log(hash);
+                  switch (number){
+                    case 0:
+                        answer1(hash);
+                        break;
+                    case 1:
+                        answer2(hash);
+                        break;
+                    case 2:
+                        answer3(hash);
+                        break;
+                    case 3:
+                        answer4(hash);
+                        break;
+                    case 4:
+                        answer5(hash);
+                        break;
+                    case 5:
+                        answer6(hash);
+                        break;
+                  }
+                  
+              } 
+        function answer1(hash) {
+                if(hash==661931348){
                     document.querySelector('#text0').innerHTML="solved"
                     
                 }
-                document.querySelector("#answer0").value=' ';
+                document.querySelector("#answer0").value='';
         }
 
-        function answer2() {
-                const name = document.querySelector('#answer1').value;
-                if(name==="ctf{oofnumbertwo)"){
+        function answer2(hash) {
+                if(hash=="-1217794586"){
                     document.querySelector('#text1').innerHTML="solved"
                     
                 }
-                document.querySelector("#answer1").value=' ';
+                document.querySelector("#answer1").value='';
         }
 
-        function answer3() {
-                const name = document.querySelector('#answer2').value;
-                if(name==="ctf{lookeehere_its _trump}"){
+        function answer3(hash) {
+                if(hash=="270575616"){
                     document.querySelector('#text2').innerHTML="solved"
                     
                 }
-                document.querySelector("#answer2").value=' ';
+                document.querySelector("#answer2").value='';
         }
 
-        function answer4() {
-                const name = document.querySelector('#answer3').value;
-                if(name==="ctf{oohufoundmytwitter}"){
+        function answer4(hash) {
+                if(hash=="-354579003"){
                     document.querySelector('#text3').innerHTML="solved"
                     
                 }
-                document.querySelector("#answer3").value=' ';
+                document.querySelector("#answer3").value='';
         }
 
-        function answer5() {
-                const name = document.querySelector('#answer4').value;
-                if(name==="ctf{ugreppedit!!}"){
+        function answer5(hash) {
+                if(hash=="1675453992"){
                     document.querySelector('#text4').innerHTML="solved"
                     
                 }
-                document.querySelector("#answer4").value=' ';
+                document.querySelector("#answer4").value='';
         }
 
-        function answer6() {
-                const name = document.querySelector('#answer5').value;
-                if(name==="ctf{love_food_chiphers}"){
+        function answer6(hash) {
+                if(hash=="185945721"){
                     document.querySelector('#text5').innerHTML="solved"
                     
                 }
-                document.querySelector("#answer5").value=' ';
+                document.querySelector("#answer5").value='';
         }
     </script>
 </head>
@@ -64,40 +95,40 @@
     <h1>Find flags, all flags are encased in ctf{}</h1>
     <h2 id="text0">Decode: Y3Rme3lvdXNvdmVlZGRpdCk= </h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer0">
-        <button type="submit" onclick="answer1()" value="Submit">Submit</button>
+        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer0">
+        <button type="submit" onclick="stringToHash(0)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text1">Decode: pgs{bbsahzoregjb) </h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer1">
-        <button type="submit" onclick="answer2()" value="Submit">Submit</button>
+        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer1">
+        <button type="submit" onclick="stringToHash(1)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text2">Find the flag</h2>
     <img src="trump (1).jpeg" alt="trump" width=100px>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer2">
-        <button type="submit" onclick="answer3()" value="Submit">Submit</button>
+        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer2">
+        <button type="submit" onclick="stringToHash(2)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text3">Find my twitter</h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer3">
-        <button type="submit" onclick="answer4()" value="Submit">Submit</button>
+        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer3">
+        <button type="submit" onclick="stringToHash(3)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text4">Grep it</h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer4">
-        <button type="submit" onclick="answer5()" value="Submit">Submit</button>
+        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer4">
+        <button type="submit" onclick="stringToHash(4)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text5">love BACON on berkfast Decode: AAABABAABAAABABABABAABBABBAABBAABAAAABABABBABABBABAAABBAAABAAABBBABAAAABBBAAABBBAABAABAAAABAAAB
     </h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="Name"  id="answer5">
-        <button type="submit" onclick="answer6()" value="Submit">Submit</button>
+        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer5">
+        <button type="submit" onclick="stringToHash(5)" value="Submit">Submit</button>
     </form>
     
 
