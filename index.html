@@ -38,6 +38,9 @@
                     case 5:
                         answer6(hash);
                         break;
+                    case 6:
+                        answer7(hash);
+                        break;
                   }
                   
               } 
@@ -88,6 +91,13 @@
                 }
                 document.querySelector("#answer5").value='';
         }
+
+        function answer7(hash) {
+                if(hash=="1993542959"){
+                    document.querySelector('#text6').innerHTML="solved"
+                }
+                document.querySelector("#answer6").value='';
+        }
     </script>
 </head>
 
@@ -95,40 +105,47 @@
     <h1>Find flags, all flags are encased in ctf{}</h1>
     <h2 id="text0">Decode: Y3Rme3lvdXNvdmVlZGRpdCk= </h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer0">
+        <input type="text" autocomplete="off" autofocus placeholder="flag"  id="answer0">
         <button type="submit" onclick="stringToHash(0)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text1">Decode: pgs{bbsahzoregjb) </h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer1">
+        <input type="text" autocomplete="off" autofocus placeholder="flag"  id="answer1">
         <button type="submit" onclick="stringToHash(1)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text2">Find the flag</h2>
     <img src="trump (1).jpeg" alt="trump" width=100px>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer2">
+        <input type="text" autocomplete="off" autofocus placeholder="flag"  id="answer2">
         <button type="submit" onclick="stringToHash(2)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text3">Find my twitter</h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer3">
+        <input type="text" autocomplete="off" autofocus placeholder="flag"  id="answer3">
         <button type="submit" onclick="stringToHash(3)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text4">Grep it</h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer4">
+        <input type="text" autocomplete="off" autofocus placeholder="flag"  id="answer4">
         <button type="submit" onclick="stringToHash(4)" value="Submit">Submit</button>
     </form>
 
     <h2 id="text5">love BACON on berkfast Decode: AAABABAABAAABABABABAABBABBAABBAABAAAABABABBABABBABAAABBAAABAAABBBABAAAABBBAAABBBAABAABAAAABAAAB
     </h2>
     <form id="form" onsubmit="return false">
-        <input type="text" autocomplete="off" autofocus placeholder="hash"  id="answer5">
+        <input type="text" autocomplete="off" autofocus placeholder="flag"  id="answer5">
         <button type="submit" onclick="stringToHash(5)" value="Submit">Submit</button>
+    </form>
+
+    <h2 id="text6">cool sounds</h2>
+    <a href="coolsong.wav" target="_blank" style = "margin-bottom:30px;">sounds.wav (lower ur volum)</a>
+    <form id="form" onsubmit="return false">
+        <input type="text" autocomplete="off" autofocus placeholder="flag"  id="answer6">
+        <button type="submit" onclick="stringToHash(6)" value="Submit">Submit</button>
     </form>
     
 
