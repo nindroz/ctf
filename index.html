@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
     <title>Document</title>
     <script>
@@ -40,6 +41,9 @@
                         break;
                     case 6:
                         answer7(hash);
+                        break;
+                    case 7:
+                        answer8(hash);
                         break;
                   }
                   
@@ -98,6 +102,13 @@
                 }
                 document.querySelector("#answer6").value='';
         }
+
+        function answer8(hash) {
+                if(hash=="-1351687654"){
+                    document.querySelector('#text7').innerHTML="solved"
+                }
+                document.querySelector("#answer7").value='';
+        }
     </script>
 </head>
 
@@ -146,6 +157,13 @@
     <form id="form" onsubmit="return false">
         <input type="text" autocomplete="off" autofocus placeholder="flag"  id="answer6">
         <button type="submit" onclick="stringToHash(6)" value="Submit">Submit</button>
+    </form>
+
+    <h2 id="text7">style is cool</h2>
+    <h2>sdfsdfjsdlkasflasdkjflsdkjflsdkjfsj,flsdjcsljflsddsfjsadjsdkfj<span class=flag>ctf{style_can_be_HiDDen}</span></h2>
+    <form id="form" onsubmit="return false">
+        <input type="text" autocomplete="off" autofocus placeholder="flag"  id="answer7">
+        <button type="submit" onclick="stringToHash(7)" value="Submit">Submit</button>
     </form>
     
 
